@@ -66,7 +66,5 @@ if ( ! function_exists( 'prefix_remove_core_block_styles' ) ):
 	}
 endif;
 
-add_action( 'wp_enqueue_scripts', 'prefix_remove_core_block_styles' )
-
 // Add block patterns.
 require get_template_directory() . '/inc/block-patterns.php';
