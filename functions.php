@@ -62,7 +62,7 @@ add_action( 'wp_enqueue_scripts', 'blockstyleexample_styles' );
 
 if ( ! function_exists( 'prefix_remove_core_block_styles' ) ):
 	function prefix_remove_core_block_styles() {
-		wp_dequeue_style('wp-block-quote')
+		// wp_dequeue_style('wp-block-quote')
 	}
 endif;
 
