@@ -9,10 +9,6 @@
  * @since Block Style Example 1.0
  */
 
-function prefix_remove_core_block_styles() {
-	wp_dequeue_style( 'wp-block-quote' )
-}
-
 if ( ! function_exists( 'blockstyleexample_support' ) ) :
 
 	/**
@@ -63,8 +59,6 @@ if ( ! function_exists( 'blockstyleexample_styles' ) ) :
 endif;
 
 add_action( 'wp_enqueue_scripts', 'blockstyleexample_styles' );
-
-add_action( 'wp_enqueue_scripts', 'prefix_remove_core_block_styles' )
 
 // Add block patterns.
 require get_template_directory() . '/inc/block-patterns.php';
